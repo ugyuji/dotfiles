@@ -1,2 +1,50 @@
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'codota/tabnine-vim'
+
+[[plugins]]
+repo = 'Shougo/defx.nvim'
+depends = ['defx-git', 'defx-icons']
+hook_add = """
+source ~/dotfiles/.config/defx.vim
+"""
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+if = '''!has('nvim')'''
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+if = '''!has('nvim')'''
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = """
+source ~/dotfiles/.config/denite.vim
+"""
+
+[[plugins]]
+repo = "neoclide/coc.nvim"
+merged = 0
+rev = "release"
+hook_add = """
+source ~/dotfiles/.config/coc.vim
+"""
+  

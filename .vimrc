@@ -105,15 +105,6 @@ set ttymouse=xterm2
 " Undo
 set undofile
 
-" Blacket auto-complete
-inoremap { {}<Left>
-inoremap [ []<Left>
-inoremap ( ()<Left>
-
-" Quote auto-complete
-inoremap ' ''<LEFT>
-inoremap " ""<LEFT>
-
 filetype plugin on
 
 " ファイルツリーの表示形式、1にするとls -laのような表示になります
@@ -126,4 +117,3 @@ let g:netrw_sizestyle="H"
 let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
 " プレビューウィンドウを垂直分割で表示する
 let g:netrw_preview=1
-
